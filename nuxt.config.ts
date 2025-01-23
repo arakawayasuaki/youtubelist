@@ -12,6 +12,12 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true,
   },
+  runtimeConfig: {
+    //...
+    public: {
+      APIKEY: process.env.APIKEY,
+    },
+  },
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {

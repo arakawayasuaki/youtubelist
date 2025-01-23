@@ -1,6 +1,8 @@
 <script lang="ts" setup>
-let channelid = ref("");
+const config = useRuntimeConfig();
+const ApiKey = config.youtubeApiKey;
 let urllists = ref<string[]>([]);
+let channelid = ref<string>("");
 
 interface ChannelData {
   items: Array<{
