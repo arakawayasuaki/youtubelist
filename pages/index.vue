@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-const ApiKey = "AIzaSyAqD-TO7-fFXJRlPPj7ibwGx-0_d7JfSwo";
 let channelid = ref("");
 let urllists = ref<string[]>([]);
 
