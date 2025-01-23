@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const config = useRuntimeConfig();
-const ApiKey = config.youtubeApiKey;
+const ApiKey = config.public.APIKEY;
 let urllists = ref<string[]>([]);
 let channelid = ref<string>("");
 
